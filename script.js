@@ -15,7 +15,7 @@ const CHALLENGES = [
   '💆  Massagem de 10 minutos — você escolhe quem recebe primeiro!',
   '🌅  Combinem um passeio surpresa no próximo fim de semana!',
   '💌  Mandem uma mensagem super carinhosa um pro outro agora!',
-  '🍦  Sorvete juntos hoje — você escolhe o sabor!',
+  '🍦  Transar em gostoso e deixar seu namorado fazer oque ele quiser!',
   '🎮  Uma partida do jogo favorito de cada um, juntos!',
 ];
 
