@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>💕 Jogo do Amor</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Floating hearts -->
+<div class="hearts-bg" id="hearts-bg"></div>
+
+<!-- ─────────────────── SCREEN 1: WELCOME ─────────────────── -->
+<div class="screen active" id="s-welcome">
+  <div class="card-surface">
+    <div style="font-size:3rem;margin-bottom:.4rem">💕</div>
+
+    <h1 class="title-script">Jogo do Amor</h1>
+
+    <p class="body-text" style="margin-bottom:1.6rem">
+      Um joguinho especial feito com todo o carinho do mundo para você. ❤️
+    </p>
+
+    <div class="divider">✦ ✦ ✦</div>
+
+    <p style="color:var(--rose-dark);font-weight:700;margin:.8rem 0 .5rem;font-size:.95rem">
+      Seu nome, meu amor:
+    </p>
+
+    <input
+      type="text"
+      class="love-input"
+      id="pname"
+      placeholder="Seu nome aqui ❤️"
+      maxlength="20"
+    />
+
+    <br>
+
+    <button class="btn" onclick="startGame()">
+      Começar o Jogo 💌
+    </button>
+  </div>
+</div>
+
+<!-- ─────────────────── SCREEN 2: FLIP CARDS ─────────────────── -->
+<div class="screen" id="s-cards">
+  <div class="card-surface">
+
+    <div class="progress">
+      <div class="pdot on" id="d1"></div>
+      <div class="pdot" id="d2"></div>
+      <div class="pdot" id="d3"></div>
+    </div>
+
+    <h2 class="subtitle-script">Mensagens Secretas 💌</h2>
+
+    <p class="body-text">
+      Vire todas as cartas para descobrir mensagens especiais
+    </p>
+
+    <div class="cards-grid" id="cgrid"></div>
+
+    <p class="body-text" id="cards-hint" style="font-size:.85rem;color:var(--pink)">
+      ✦ Clique nas cartas para revelar ✦
+    </p>
+
+    <button
+      class="btn"
+      id="btn-to-wheel"
+      style="display:none"
+      onclick="goToWheel()"
+    >
+      Próxima Fase 🌹
+    </button>
+
+  </div>
+</div>
+
+<!-- ─────────────────── SCREEN 3: WHEEL ─────────────────── -->
+<div class="screen" id="s-wheel">
+  <div class="card-surface">
+
+    <div class="progress">
+      <div class="pdot" id="d1b"></div>
+      <div class="pdot on" id="d2b"></div>
+      <div class="pdot" id="d3b"></div>
+    </div>
+
+    <h2 class="subtitle-script">Roda dos Desafios 🎡</h2>
+
+    <p class="body-text">
+      Gire a roda e descubra um desafio romântico especial!
+    </p>
+
+    <div class="wheel-wrap">
+      <canvas id="wcanvas" width="270" height="270"></canvas>
+      <div class="wheel-center">❤️</div>
+      <div class="wheel-pin">◀</div>
+    </div>
+
+    <div class="result-box" id="wresult" style="display:none">
+      <p id="wresult-text"></p>
+    </div>
+
+    <button class="btn" id="spin-btn" onclick="spinWheel()">
+      Girar! 🌀
+    </button>
+
+    <button
+      class="btn btn-gold"
+      id="btn-to-end"
+      style="display:none"
+      onclick="goToEnd()"
+    >
+      Ver Surpresa Final ✨
+    </button>
+
+  </div>
+</div>
+
+<!-- ─────────────────── SCREEN 4: ENDING ─────────────────── -->
+<div class="screen" id="s-end">
+  <div class="card-surface">
+
+    <div class="stars-row">
+      <span class="star" style="animation-delay:0s">⭐</span>
+      <span class="star" style="animation-delay:.25s">💕</span>
+      <span class="star" style="animation-delay:.5s">⭐</span>
+    </div>
+
+    <h1 class="title-script" id="end-title">
+      Parabéns, amor!
+    </h1>
+
+    <div class="gold-badge" id="end-badge">
+      🏆 Você completou o Jogo do Amor!
+    </div>
+
+    <div class="letter-box">
+      <p id="end-msg"></p>
+      <span class="letter-sign" id="end-sign">
+        Com amor, Daniel ❤️
+      </span>
+    </div>
+
+    <button class="btn" style="margin-top:1rem" onclick="restart()">
+      Jogar de Novo 🔄
+    </button>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
