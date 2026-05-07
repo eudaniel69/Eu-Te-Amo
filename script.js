@@ -9,14 +9,14 @@ const MSGS = [
 ];
 
 const CHALLENGES = [
-  '🎬  Maratona de filmes no sofá com muita pipoca — você escolhe!',
-  '🍕  Peçam comida juntos e assistam algo especial esta semana!',
-  '📸  Tirem uma foto fofa juntos hoje mesmo!',
-  '💆  Massagem de 10 minutos — você escolhe quem recebe primeiro!',
-  '🌅  Combinem um passeio surpresa no próximo fim de semana!',
-  '💌  Mandem uma mensagem super carinhosa um pro outro agora!',
-  '🍦  Transar bem gostoso e deixar seu namorado fazer oque ele quiser!',
-  '🎮  Uma partida do jogo favorito de cada um, juntos!',
+  '  Maratonar Lucifer no meu quarto com pipoca',
+  '  Dormir de conchinha!',
+  '  Tirem uma foto juntos hoje mesmo que so os dois podem ver!',
+  '  Massagem de 10 minutos — você escolhe quem recebe primeiro!',
+  '  Rodizio de comida japonesa!',
+  '  Mande uma foto sensual!',
+  '  Transar bem gostoso e deixar seu namorado fazer oque ele quiser!',
+  '  Uma partida de freefire!',
 ];
 
 const WHEEL_COLORS = [
